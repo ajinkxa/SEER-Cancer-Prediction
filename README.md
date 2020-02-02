@@ -88,6 +88,23 @@ Once we had a clean and consistent dataset, we created some visualizations to un
 <img src="images/Sex.jpeg?raw=true"/>
 <img src="images/Registries.jpeg?raw=true"/>
 
+## Predictive Models
+
+- We fit several predictive models. We started with simple models like Regression and Decision Trees. Though we got a good baseline with these models, we were hardly able to get some convincing results from these models. 
+
+- Other models like Random Forest and Support Vector Machines hardly showed any increment in accuracy.
+
+- That’s when we decided to build some tree-based ensemble models. We then built models like XGBoost, LGBM (Light Grading Boosting Machine), and Catboost and kept improving them further until we got acceptable accuracy. 
+
+<img src="images/Annotation 2019-11-18 190200.png?raw=true"/>
+
+## Model Validation
+
+Real world projects like these is where making sure the models are statistically valid becomes the crucial step. Since the data is highly imbalanced (more people have grade I and grade II cancer than grade III and grade IV), the model too will be skewed towards the majority class. This is where approaches like cross-validation which show pessimistic bias, along with precision and recall, will give you most valid results.
+
+### Final Results
+
+We were able to achieve an accuracy of ~80% with our LGBM models, which is still not good enough, but we managed to achieve an AUC (area under curve) of 0.71 which was on par with state-of-the-art AUV of average survivability prediction (0.79) source: https://www.researchgate.net/publication/318661649)
 
 
 
