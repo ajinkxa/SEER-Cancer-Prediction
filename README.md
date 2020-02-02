@@ -102,10 +102,16 @@ Once we had a clean and consistent dataset, we created some visualizations to un
 
 Real world projects like these is where making sure the models are statistically valid becomes the crucial step. Since the data is highly imbalanced (more people have grade I and grade II cancer than grade III and grade IV), the model too will be skewed towards the majority class. This is where approaches like cross-validation which show pessimistic bias, along with precision and recall, will give you most valid results.
 
-### Final Results
+## Final Results
 
 We were able to achieve an accuracy of ~80% with our LGBM models, which is still not good enough, but we managed to achieve an AUC (area under curve) of 0.71 which was on par with state-of-the-art AUV of average survivability prediction (0.79) source: https://www.researchgate.net/publication/318661649)
 
+
+## References
+
+All statistics in this report are based on statistics from SEER and the Centers for Disease Control and Prevention's National Center for Health Statistics. Most can be found within:
+
+- Howlader N, Noone AM, Krapcho M, Miller D, Brest A, Yu M, Ruhl J, Tatalovich Z, Mariotto A, Lewis DR, Chen HS, Feuer EJ, Cronin KA (eds). SEER Cancer Statistics Review, 1975-2016, National Cancer Institute. Bethesda, MD, https://seer.cancer.gov/csr/1975_2016/, based on November 2018 SEER data submission, posted to the SEER web site, April 2019.
 
 
 
